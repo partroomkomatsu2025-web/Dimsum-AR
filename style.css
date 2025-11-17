@@ -32,6 +32,12 @@ h1 {
     font-size: 16px;
     color: #555;
 }
+.product-image {
+    width: 100px; /* Ukuran gambar produk */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
 .quantity-controls button {
     padding: 5px 15px;
     font-size: 18px;
