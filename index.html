@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Dimsum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Penjualan Dimsum</h1>
+
+    <!-- Dimsum S -->
+    <div class="product" id="dimsumS">
+        <div>
+            <h2>Dimsum S (2 pcs)</h2>
+            <p>Harga: Rp 10.000</p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="updateQuantity('dimsumS', 'decrease')">-</button>
+            <span id="dimsumSQty">0</span>
+            <button onclick="updateQuantity('dimsumS', 'increase')">+</button>
+        </div>
+    </div>
+
+    <!-- Dimsum L -->
+    <div class="product" id="dimsumL">
+        <div>
+            <h2>Dimsum L (4 pcs)</h2>
+            <p>Harga: Rp 20.000</p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="updateQuantity('dimsumL', 'decrease')">-</button>
+            <span id="dimsumLQty">0</span>
+            <button onclick="updateQuantity('dimsumL', 'increase')">+</button>
+        </div>
+    </div>
+
+    <!-- Dimsum XL -->
+    <div class="product" id="dimsumXL">
+        <div>
+            <h2>Dimsum XL (6 pcs)</h2>
+            <p>Harga: Rp 28.000</p>
+        </div>
+        <div class="quantity-controls">
+            <button onclick="updateQuantity('dimsumXL', 'decrease')">-</button>
+            <span id="dimsumXLQty">0</span>
+            <button onclick="updateQuantity('dimsumXL', 'increase')">+</button>
+        </div>
+    </div>
+
+    <!-- Total Price -->
+    <div class="total">
+        Total Harga: Rp <span id="totalPrice">0</span>
+    </div>
+
+    <!-- Checkout Button -->
+    <a href="#" id="whatsappLink">
+        <button class="checkout-btn">Checkout</button>
+    </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
